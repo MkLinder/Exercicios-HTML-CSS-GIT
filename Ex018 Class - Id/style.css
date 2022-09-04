@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/*
+    em HTML é id     = em CSS é #
+    em HTML é class  = em CSS é .
+
+    OBS: PODE-SE USAR DUAS CLASSES EM UMA MESMA TAG, TAMBÉ PODE-SE USAR CLASSE E ID NA MESMA TAG
+*/
+
+body {
+    background-color: rgb(140, 197, 178);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(36, 53, 47);
+}
+
+h1#principal {      /* Se escrito sem a seletora, ou seja somente '#principal', */
+    text-align: center;  /*vai dar a configuração para tudo que tiver o mesmo ID.*/
+    background-color: rgb(36, 53, 47);
+    color: white;
+
+}
+
+h2 {
+    color: rgb(18, 53, 41);
+}
+
+.sub {
+    color: rgb(18, 53, 41);
+    font-weight: bold;  /*  Negrito */
+}
+
+.subb {
+    color: rgb(88, 83, 31);
+}
+
+.destaque {
+    background-color: rgba(134, 134, 70, 0.705);
+}
