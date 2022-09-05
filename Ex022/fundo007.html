@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+         #container {
+            background-image: url('images/target001.png');
+            background-size: 100% 100%;
+            position: relative; /* essa declaração já é padrão, não precisaria declarar...*/
+            height: 500px;
+            padding: 10px;
+            background-color: purple;
+         }
+
+         #conteudo {
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            
+            left: 50%; /* deslocamento, posicionamento do elemento. Funciona somente quando declarado 'position: absolute;' */ 
+            top: 50%;
+
+            transform: translate(-50%, -50%); /* faz com que o elemento possa ser deslocado mais precisamente. Valores positivos desloca para direirta e para baixo, valores negativos deslocam para esquerda e para cima */
+            
+         }
+
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
