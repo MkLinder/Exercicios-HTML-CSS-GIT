@@ -35,7 +35,11 @@
 
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint aperiam doloremque maiores atque maxime necessitatibus vel ad esse non mollitia perspiciatis veniam, ratione aliquid amet dolores aspernatur sapiente temporibus sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, in odit quaerat ut aspernatur facere vero ipsam ducimus laboriosam nesciunt! Nostrum odio totam, illo rerum quos voluptates velit nam enim?</p>
 
-    <iframe id="tela" name="frame" src="">  <!-- Da-se um 'name' para o frame e depois com o 'target' linka a página dentro do frame. -->
+    <iframe id="tela" name="frame" src="" sandbox="sandbox" referrerpolicy="no-referrer">  <!-- Da-se um 'name' para o frame e depois com o 'target' linka a página dentro do frame.
+        
+    'sandbox' Impede, por exemplo, que o usuário faça um cadastro (utilizando suas informações) em outro site que está dentro do iframe no meu site. Também podemos configurar para que haja algumas permissões ao invés de bloquear tudo.
+
+    'no-referrer' Impede que o site que está dentro do iframe, colete informações do usuário -->
         <p>Infelizmente seu navegador não é compatível com isso</p>
     </iframe>
 
