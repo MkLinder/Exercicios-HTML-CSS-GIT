@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="estilos/mobile-first.css" media="screen">
     <link rel="stylesheet" href="estilos/impressora.css" media="print">
     <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- ESTE LINK FOI COPIADO DO GOOGLE E SERVE PARA 'ATIVAR' ÍCONES DIRETAMENTE DO GOOGLE, ÍCONES USADOS PARA VARIAS FUNÇÕES, NESTE CASO FOI USADO PARA FAZER O MENU HAMBURGUER PARA VIEWPORTS PEQUENAS.-->
 </head>
 <body>
     <header>
         <h1>Notícias</h1>
-        <menu>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>  <!-- ESTE LINK FOI COPIADO DO SITE ICON FONTS DO GOOGLE, E SERVE PARA CHAMAR O LINK CITADO DO <HEAD>. 
+         PARA CONFIGURAR O ÍCONE DAMOS UM 'ID' A ELE.-->
+        <menu id="itens">
             <ul>
                 <li><a href="#">Esportes</a></li>
                 <li><a href="#">Política</a></li>
@@ -41,5 +44,15 @@
              </p>
         </article>
     </main>
+                                    <!-- OBS: = (recebe) e == (igual) -->
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {  
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
